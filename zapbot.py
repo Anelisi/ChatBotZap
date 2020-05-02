@@ -3,7 +3,7 @@ import time
 
 class WhatsappBot:
     def __init__(self):
-        self.mensagem = "Olá, teste do meu primeiro bot no Whatsapp!"
+        self.mensagem = "Deeeeeuuuuu ceeeertoooooooo!"
         self.grupos = ["IT Family", "Dev Target.IT"]
         options = webdriver.ChromeOptions()
         options.add_argument('lang=pt-br')
@@ -19,7 +19,7 @@ class WhatsappBot:
             grupo = self.driver.find_element_by_xpath(f"//span[@title='{grupo}']")
             time.sleep(3)
             grupo.click()
-            chat_box = self.driver.find_elements_by_class_name('_1Plpp')
+            chat_box = self.driver.find_element_by_class_name('_1Plpp')
             time.sleep(3)
             chat_box.click()
             chat_box.send_keys(self.mensagem)
